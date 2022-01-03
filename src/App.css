@@ -6,13 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+*{
+  box-sizing: border-box;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+.body{
+  left-margin: 5rem;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,7 +28,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+input{
+  height: 30px;
+  width: 20rem;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +43,115 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex-items{
+  display:flex;
+}
+.header{
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  height:5rem;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 4%);
+}
+.options{
+  justify-content: space-between;
+  width: 30rem;
+  margin-left:5rem;
+}
+.profile-icons{
+   width: 30rem;
+  display: flex;
+  justify-content: inherit;
+}
+.header-buttons{
+  display:flex;
+  align-items: center;
+  font-weight: 500;
+  color:#4b4b4b;
+}
+/* .wrapper-search{
+  display:flex;
+  justify-content:space-between;
+} */
+
+.carousal{
+  overflow:hidden;
+  /* position: relative; */
+  z-index:1;
+}
+
+.inner{
+  white-space : nowrap;
+  transition: transform 0.3s;
+}
+.fa{
+  color:#282c34;
+  margin: 0px 12px;
+}
+.radio_container{
+  margin-top: 4px;
+}
+
+.carousal-item {
+  display : inline-flex;
+  align-items : center;
+  justify-content: center;
+  height : 300px;
+  /* background-color: green; */
+  color : #fff;
+}
+.indicators{
+  position: absolute;
+  top: 22rem;
+  left: 36rem;
+  display: flex;
+}
+.indicators > button.active{
+  /* background-color: green; */
+  /* color:#fff; */
+}
+.overlay-element{
+  background-color:#d5fdda;
+  position: absolute;
+  /* height:10rem; */
+  width:100%;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+}
+.is-hidden{
+  display: none;
+}
+.paper:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor:pointer;
+}
+.radio_size{
+  height: 10px;
+  width: 1rem;
+}
+.search_icon:hover{
+  font-size:large;
+  padding-top: 1px !important;
+}
+.grid_view{
+  display:flex;
+  flex-direction: column;
+}
+.item_wrapper{
+  display:flex;
+}
+.typo_cart{
+  display: flex;
+  flex-direction: column;
+}
+.input_field{
+    width: 6rem ;
+    height: 5px ;
+}
+.flex_all{
+  display: flex;
+    flex-direction: column;
 }

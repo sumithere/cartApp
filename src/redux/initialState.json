@@ -1,0 +1,14 @@
+{
+    "itemDes":[{"itemId":"23","Category":"Womens Wear","Number":5,"Item Price":2300},{"itemId":"23","Category":"Womens Wear","Number":5,"Item Price":2300}],
+    "Total":5000,
+    "auth":{
+        "loading":false,
+        "error":""
+    },
+    "user":null,
+    "userProfile":"",
+    "item":{},
+    "allItems":[],
+    "cart":[]
+}
+
